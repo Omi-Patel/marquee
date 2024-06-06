@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Card from "./Card";
+import { NavLink } from "react-router-dom";
 
 const MyShelf = () => {
   const index = localStorage.getItem("oldBook");
