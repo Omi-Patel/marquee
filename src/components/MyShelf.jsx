@@ -46,11 +46,11 @@ const MyShelf = () => {
         )}
       </div>
 
-      <a href={"/"} className="flex justify-center items-center mt-4">
+      <NavLink to={"/"} className="flex justify-center items-center mt-4">
         <button className="px-6 py-2 tracking-wider my-2 sm:my-0  bg-green-400 font-bold text-black rounded-xl">
           Go Back!
         </button>
-      </a>
+      </NavLink>
     </>
   );
 };
