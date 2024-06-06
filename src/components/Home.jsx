@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
 import Loader from "./Loader";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   const [books, setBooks] = useState([]);
@@ -41,11 +42,11 @@ const Home = () => {
           className=" w-full sm:w-[40%] px-4 py-2 rounded-full border-2 border-black text-black font-medium"
           placeholder="Search Book By Name..."
         />
-        <a href={"/myshelf"}>
+        <NavLink to={"/myshelf"}>
           <button className="px-6 py-2 tracking-wider my-2 sm:my-0  bg-green-400 font-bold text-black rounded-xl">
-            My Bookshelf
+            My Bookshelf 
           </button>
-        </a>
+        </NavLink>
       </div>
       <div className="  grid grid-cols-1 md:grid-cols-4 mt-10">
         {!loading ? (
